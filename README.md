@@ -1,5 +1,7 @@
 # ProjectQR
 
+Proyecto tiene lo  desarrollado para un QR en angular con mongoDB como base de datons y frontEnd en Postman, tiene su conexion a la base de datos por medio de JS.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
 ## Development server
