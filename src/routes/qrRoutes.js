@@ -14,7 +14,7 @@ router.post('/', async (require,res)=>{
     const newQr = new modelQr({q_id,pk});
     console.log(newQr);
 
-    await newQr.save(); //guardar en la db async y await hacen que las cosas se hagan al mismo tiempo
+    await newQr.save(); // Guardar en la db async y await hacen que las cosas se hagan al mismo tiempo
     //console.log(require.body);
     res.json(newQr);
    
