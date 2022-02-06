@@ -1,6 +1,8 @@
 const{Router} = require('express');
 const router = Router();
 
+
+
 const modelUser = require('../models/users');
 
 router.get('/', async (require,res)=>{
@@ -8,6 +10,9 @@ router.get('/', async (require,res)=>{
     res.json(users);
     //res.send("consulta realizada");
 });
+
+
+
 
 router.post('/', async (require,res)=>{
     const {idUser, name, lastname} = require.body;
@@ -17,8 +22,13 @@ router.post('/', async (require,res)=>{
     await newUser.save(); //guardar en la db async y await hacen que las cosas se hagan al mismo tiempo
     //console.log(require.body);
     res.json(newUser);
+  
+  
+  
 
-   // res.send("datos agregados");
-});
+   // 
+});    //Envio de datos generados servicio res.send("datos agregados");
+
+
 
 module.exports = router;
