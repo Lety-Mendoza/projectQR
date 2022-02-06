@@ -21,4 +21,4 @@ router.post('/', async (require,res)=>{
    // res.send("datos agregados");
 });
 
-module.exports = router;
+module.exports = router; //Exportación del módulo
